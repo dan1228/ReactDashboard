@@ -1,0 +1,168 @@
+body {
+  //background-color: hsl(226, 43%, 10%);
+}
+
+.container {
+  //border: 1px solid red;
+  width: 88%;
+  margin: 2rem auto;
+}
+
+.menu-card{
+  background-color: hsl(226, 43%, 10%);
+  border-radius: 2.5rem;
+  .card-report{
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  img{
+    width: 25%;
+    border: 3% solid white;
+    border-radius: 50%;
+  }
+
+  .report {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    p {
+      color: hsl(236, 100%, 87%);
+      font-size: 1.5rem;
+    }
+
+    .name{
+      color:white;
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+  }
+  
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2.5rem;
+
+  .menu-link {
+    color: hsl(235, 45%, 61%);
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    &:hover{
+      color: white;
+    }
+  }
+  .menu-active{
+    color:white;
+  }
+}
+
+.regular-card {
+  //border: 1px solid red;
+  width: 100%;
+  border-radius: 1.6rem;
+  background-repeat: no-repeat;
+  background-position: 92% -1rem;
+
+  .property-card {
+      position: relative;
+      background-color: hsl(235, 46%, 20%);
+      margin-top: 4rem;
+      border-radius: 1.6rem;
+      padding: 2.5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+
+      &:hover {
+          //background-color: $card-hover;
+        }
+
+        .row {
+            //border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .title {
+                color: white;
+                font-size: 1.8rem;
+                font-weight: 500;
+                z-index: 98;
+            }
+
+            .points {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    .point {
+                        background-color: white;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    background-color: pink;
+                    position: absolute;
+                    left: 0; 
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: 1.6rem;
+                    display: none;
+                    z-index: 1;
+                }
+
+                &:hover::before {
+                    background-color: hsl(235, 46%, 20%);;
+                    display: block;
+                }
+                
+                .point {
+                    background-color: hsl(236, 100%, 87%);
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    border-radius: 50%;
+                    margin: 0.2rem;
+                    z-index: 99;
+                }
+            }
+        }
+
+        .row-2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            z-index: 97;
+
+            .hours {
+                color: white;
+                font-size: 3rem;
+                font-weight: 300;
+            }
+
+            .description {
+                color: hsl(236, 100%, 87%);
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
+
+  
